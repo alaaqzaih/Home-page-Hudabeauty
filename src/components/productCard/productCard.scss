@@ -1,0 +1,111 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    overflow: hidden;
+    .cardImages {
+        position: relative;
+        .product-card__image {
+            max-width: 100%;
+            height: auto;
+        }
+        .product-card__image-hover {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            object-fit: contain;
+            opacity: 0;
+            transition: opacity .2s;
+        }
+        .quick-view {
+            display: none;
+        }
+
+        &:hover .quick-view {
+            justify-content: center;
+            position: absolute;
+            bottom: 1.5rem;
+            background-color: #FFF;
+            opacity: .7;
+            display: none;
+            left: 5.9rem;
+            padding: 0.325rem 1.575rem;
+            display: flex;
+            flex-direction: column;
+            font-weight: 600;
+            font-size: .5625rem;
+            color: #444;
+        }
+
+        &:hover .product-card__image-hover {
+            opacity: 1;
+
+        }
+
+        .badges-container {
+            position: absolute;
+            left: 0.3125rem;
+            top: 0.3125rem;
+            display: flex;
+            flex-direction: column;
+            font-weight: 600;
+            font-size: .6625rem;
+            letter-spacing: .08313rem;
+            text-transform: uppercase;
+            .white-tile-badge {
+                margin-bottom: 0.3125rem;
+                background-color: #fff;
+                padding: 0.1875rem 0.5rem;
+                color: #000;
+            }
+            .pink-title-badge {
+                background-color: #ff0098;
+                color: #fff;
+                padding: 0.1875rem 0.5rem;
+            }
+        }
+    }
+}
+.title_body {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    .product-title {
+        text-transform: uppercase;
+        color: #ff0098;
+        font-weight: 500;
+        letter-spacing: 0.3px;
+        white-space: normal;
+        padding: 0;
+        min-height: 0.8125rem;
+        max-height: 0.8125rem;
+        margin-bottom: 0.3rem;
+        margin-top: 0.3rem;
+        font-size: 0.77rem;
+    }
+    .product-description {
+        margin-bottom: 120px;
+        font-size: 0.85rem;
+        font-weight: 500;
+    }
+    .add-to-cart-container {
+        cursor: pointer;
+        background-color: black;
+        .btn {
+            padding-top: 2px;
+            padding-bottom: 4px;
+            background-color: transparent;
+            color: white;
+            text-transform: uppercase ;
+            .add-to-cart-msg {
+                font-size: .875rem;
+                font-weight: bold;
+                min-height: 2.75rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+$font-path: "../public/Mukta-Medium.ttf";
+@import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+
+
+@font-face {
+    src: url("#{$font-path}");
+    font-family: "Mukta";
+}
+
+body {
+  margin: 0;
+}
+
+
+
