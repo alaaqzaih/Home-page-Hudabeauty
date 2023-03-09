@@ -5,15 +5,13 @@
   text-align: center;
 }
 .carousel{
-  padding: 13px;
+  padding: 11px;
 }
 .custom-right-arrow {
-  position: absolute !important;
-  right: -3px;
-  z-index: 1;
+  position: absolute ;
+  right: 1px;
   border: 1px solid grey;
   border-width: 0 2px 2px 0;
-  display: inline-block;
   padding: 5px;
   opacity: 0.8;
   cursor: pointer;
@@ -23,12 +21,10 @@
   opacity: 1;
 }
 .custom-left-arrow {
-  position: absolute !important ;
+  position: absolute  ;
   left: 2px;
-  z-index: 1;
   border: 1px solid grey;
   border-width: 0 2px 2px 0;
-  display: inline-block;
   padding: 5px;
   opacity: 0.8;
   cursor: pointer;
