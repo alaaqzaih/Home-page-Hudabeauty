@@ -1,0 +1,54 @@
+
+.ExperienceComp {
+    background-color: #fbe4dc;
+    margin: 45px auto;
+    color: #191919;
+    display: flex ;
+    align-items: center;
+    padding: 3.5rem 5.1rem;
+    @media (max-width: 1023.98px) {
+        padding: 1.5rem 1.5rem;
+        flex-wrap: wrap;
+    }
+    .Image {
+        @media (max-width: 1023.98px) {
+            width: 50%;
+        }
+    }
+    .text_Container {
+        .banner_title {
+            padding: 1.2rem 2.8rem;
+            font-size: 1.75rem;
+            line-height: 2.4375rem;
+            font-weight: 700;
+            @media (max-width: 1023.98px) { 
+                padding: 1.2rem 0.5rem 0.5rem 0.5rem;
+
+            }
+        }
+        .banner_description {
+            padding: 0rem 2.4rem;
+            font-size: 1.0.5rem;
+            line-height: 1.4375rem;
+            font-weight: 40;
+            margin-bottom: 1rem;
+            .btn_arrow {
+                letter-spacing: 1.9px;
+                font-size: .65rem;
+            }
+            @media (max-width: 1023.98px) {
+                font-size: 1rem;
+                line-height: 1.5rem;
+                padding: 2px;
+            }
+        }
+
+        @media (max-width: 1023.98px) {
+            width: 100%;
+            order: 3;
+        }
+
+    }
+
+
+}
