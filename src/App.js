@@ -1,8 +1,10 @@
-import Slider from "./components/carousel/Slider";
 
+import React from "react";
+import Slider from "./components/carousel/Slider";
+import "react-context-modals/dist/main.css";
 import ExperienceComp from "./components/ExperienceComp/ExperienceComp";
 
-export default function App() {
+function App() {
   return (
     <div className="App">
       <Slider />
@@ -10,3 +12,5 @@ export default function App() {
     </div>
   );
 }
+
+export default App;
